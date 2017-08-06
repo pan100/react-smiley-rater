@@ -1,7 +1,7 @@
 {
-  "name": "smiley-rater",
-  "version": "1.0.5",
-  "url" : "https://github.com/pan100/smiley-rater"
+  "name": "react-smiley-rater",
+  "version": "1.0.0",
+  "url" : "https://github.com/pan100/react-smiley-rater"
 , "email" : "panmannsam@gmail.com"
 , "license": "(MIT OR Apache-2.0)"
 ,  "scripts": {
