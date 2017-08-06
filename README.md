@@ -1,11 +1,11 @@
-# React Smiley-Rater component
+# React-Smiley-Rater component
 
 This component creates a smiley where the mouth angle is a function of a
 number between 0 and 100. Also it changes colors.
 
 ## Usage
 
-1. npm install smiley-rater
+1. npm install react-smiley-rater
 2. remember to use import: import Smiley from 'smiley-rater';
 Here is some boilerplate code:
 
