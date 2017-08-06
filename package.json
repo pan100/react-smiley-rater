@@ -1,7 +1,10 @@
 {
   "name": "smiley-rater",
   "version": "1.0.0",
-  "scripts": {
+  "url" : "https://github.com/pan100/smiley-rater"
+, "email" : "panmannsam@gmail.com"
+, "license": "(MIT OR Apache-2.0)"
+,  "scripts": {
     "build": "webpack --config webpack.config.babel.js",
     "release": "webpack --p --config webpack.config.babel.js",
     "test": "jest",
