@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import './Smiley.css';
 
 class Smiley extends Component {
-    constructor() { 
-        super();
-        this.colors = this.gradientSlider.calculateHexColorForStep();
+    constructor(props) { 
+        super(props);
+		this.colors = this.gradientSlider.calculateHexColorForStep(props.colorStops);
      }
      
      getColor(percentage) {
@@ -12,10 +12,11 @@ class Smiley extends Component {
 	 }
      
     gradientSlider = {
-	colorStops : ["#b30000", "#ffff1a", "#00e600"],
+	defaultColorStops : ["#b30000", "#ffff1a", "#00e600"],
 	minValue : 0,
 	maxValue: 100,
-	calculateHexColorForStep : function() {
+	calculateHexColorForStep : function(colorStops) {
+		this.colorStops = colorStops? colorStops : this.defaultColorStops;
 		let result = [];
 		let stepsPerGradient = this.maxValue/(this.colorStops.length -1);
 
@@ -48,6 +49,7 @@ class Smiley extends Component {
 	},
 	tools : {
 		parseColor : function(hexColorString) {
+			console.log(hexColorString);
 			var m;
 			m = hexColorString.match(/^#([0-9a-f]{6})$/i)[1];
     		if( m) {

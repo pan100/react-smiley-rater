@@ -24,7 +24,7 @@ class MyComponent extends React.Component {
         return (
       <div>
       <input itemID="slider" type="range" value={this.state.sliderVal} min="0" max="100" step="1" onChange={this.sliderChange.bind(this)} />
-      <Smiley diameter="500" percentage={this.state.sliderVal} colorStops="[#fffff, #000000]"/>
+      <Smiley diameter="500" percentage={this.state.sliderVal} colorStops={["#b30000", "#00e600", "#4286f4", "#d91ae0"]}/>
       </div>
         )
     }
