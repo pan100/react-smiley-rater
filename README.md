@@ -6,12 +6,12 @@ number between 0 and 100. Also it changes colors.
 ## Usage
 
 1. npm install react-smiley-rater
-2. remember to use import: import Smiley from 'smiley-rater';
+2. remember to use import: import Smiley from 'react-smiley-rater';
 Here is some boilerplate code:
 
 ```JavaScript
 import React from 'react';
-import Smiley from 'smiler-rater';
+import Smiley from 'react-smiler-rater';
 
 class MyComponent extends React.Component {
   constructor(props) {
