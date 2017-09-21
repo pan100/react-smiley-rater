@@ -4,11 +4,11 @@
 	else if(typeof define === 'function' && define.amd)
 		define([], factory);
 	else if(typeof exports === 'object')
-		exports["smiley-rater"] = factory();
+		exports["react-smiley-rater"] = factory();
 	else
-		root["smiley-rater"] = factory();
+		root["react-smiley-rater"] = factory();
 })(this, function() {
-return webpackJsonpsmiley_rater([1],{
+return webpackJsonpreact_smiley_rater([1],{
 
 /***/ 19:
 /***/ (function(module, exports, __webpack_require__) {
@@ -152,16 +152,12 @@ var Smiley = function (_Component) {
 			var bezierVariation = (this.props.percentage - 50) / mouthDivisor;
 			aspects.mouthDString = "M" + aspects.eyeXOffset + "," + mouthY + " q" + this.props.diameter / 4 + "," + bezierVariation + " " + this.props.diameter / 2 + ",0";
 			return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-				'div',
-				null,
-				__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-					'svg',
-					{ height: this.props.diameter, width: this.props.diameter },
-					__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('circle', { fill: this.getColor(this.props.percentage), r: this.props.diameter / 2, cx: this.props.diameter / 2, cy: this.props.diameter / 2 }),
-					__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('circle', { className: 'eye', r: aspects.eyeRadius, cx: this.props.diameter / 2 - aspects.eyeXOffset, cy: this.props.diameter / 2 - aspects.eyeYOffset }),
-					__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('circle', { className: 'eye', r: aspects.eyeRadius, cx: this.props.diameter / 2 + aspects.eyeXOffset, cy: this.props.diameter / 2 - aspects.eyeYOffset }),
-					__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('path', { className: 'mouth', d: aspects.mouthDString, fill: 'none' })
-				)
+				'svg',
+				{ height: this.props.diameter, width: this.props.diameter },
+				__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('circle', { fill: this.getColor(this.props.percentage), r: this.props.diameter / 2, cx: this.props.diameter / 2, cy: this.props.diameter / 2 }),
+				__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('circle', { className: 'eye', r: aspects.eyeRadius, cx: this.props.diameter / 2 - aspects.eyeXOffset, cy: this.props.diameter / 2 - aspects.eyeYOffset }),
+				__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('circle', { className: 'eye', r: aspects.eyeRadius, cx: this.props.diameter / 2 + aspects.eyeXOffset, cy: this.props.diameter / 2 - aspects.eyeYOffset }),
+				__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('path', { className: 'mouth', d: aspects.mouthDString, fill: 'none' })
 			);
 		}
 	}]);

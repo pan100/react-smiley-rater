@@ -90,14 +90,12 @@ class Smiley extends Component {
       let bezierVariation = (this.props.percentage-50)/mouthDivisor;
       aspects.mouthDString = "M" + aspects.eyeXOffset + "," + mouthY + " q" + this.props.diameter/4 + "," + bezierVariation + " "+ this.props.diameter/2 + ",0";
     return (
-        <div>
         <svg height={this.props.diameter} width={this.props.diameter}>
             <circle fill={this.getColor(this.props.percentage)} r={this.props.diameter/2} cx={this.props.diameter/2} cy={this.props.diameter/2}/>
             <circle className="eye" r={aspects.eyeRadius} cx={(this.props.diameter/2)-aspects.eyeXOffset} cy={(this.props.diameter/2)-aspects.eyeYOffset}/>
             <circle className="eye" r={aspects.eyeRadius} cx={(this.props.diameter/2)+aspects.eyeXOffset} cy={(this.props.diameter/2)-aspects.eyeYOffset}/>
             <path className="mouth" d={aspects.mouthDString} fill="none"/>
         </svg>
-        </div>
     );
   }
 }

@@ -1,4 +1,4 @@
-webpackJsonpsmiley_rater([0],[
+webpackJsonpreact_smiley_rater([0],[
 /* 0 */
 /***/ (function(module, exports) {
 
