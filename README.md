@@ -11,7 +11,7 @@ Here is some boilerplate code:
 
 ```JavaScript
 import React from 'react';
-import Smiley from 'react-smiler-rater';
+import Smiley from 'react-smiley-rater';
 
 class MyComponent extends React.Component {
   constructor(props) {
