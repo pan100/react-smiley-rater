@@ -49,7 +49,6 @@ class Smiley extends Component {
 	},
 	tools : {
 		parseColor : function(hexColorString) {
-			console.log(hexColorString);
 			var m;
 			m = hexColorString.match(/^#([0-9a-f]{6})$/i)[1];
     		if( m) {
