@@ -1,7 +1,8 @@
 # React-Smiley-Rater component
 
 This component creates a smiley where the mouth angle is a function of a
-number between 0 and 100. Also it changes colors.
+number between 0 and 100. Also it changes colors. See it in a real working example on
+[Twitter Smileyhash](http://smileyhash.perandersen.no)
 
 ## Usage
 
